@@ -1,0 +1,65 @@
+
+.example-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  
+  .example-sidenav-content {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h1 {
+      margin: auto;
+      font-family: 'Commissioner', sans-serif;
+      font-size: 1.2rem;
+    }
+  }
+  
+  .example-sidenav {
+    display: flex;
+  }
+
+  .menu__container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    border: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu__btn-open {
+    position: absolute;
+    right: 0;
+    border: none;
+    background: none;
+    padding: 10px;
+    margin-right: 15px;
+  }
+
+  .menu__btn-close {
+    width: 40px;
+    border: none;
+    background: none;
+    padding: 10px;
+    margin-top: 15px;
+    margin-right: 15px;
+    align-self: flex-end;
+  }
+
+  a {
+    font-family: 'Commissioner', sans-serif;
+    font-size: 1.2rem;
+    align-self: center;
+    text-decoration: none;
+    color: black;
+    padding: 15px 0;
+  }
+
+  .mat-drawer-content {
+    overflow: hidden;
+  }

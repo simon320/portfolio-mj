@@ -1,0 +1,48 @@
+<mat-drawer-container class="example-container">
+
+
+  <mat-drawer #drawer class="example-sidenav" mode="over" position="end">
+
+    <div class="menu__container" #drawer>
+      <button class="menu__btn-close" type="button" mat-button (click)="drawer.toggle()">
+        <span class="material-icons">close</span>
+      </button>
+
+      <a href="">Work</a>
+      <a href="">Work</a>
+      <a href="">Work</a>
+      <a href="">Work</a>
+    </div>
+
+  </mat-drawer>
+
+
+  <div class="example-sidenav-content">
+    <h1>MARIEL JUAREZ</h1>
+    <button type="button" class="menu__btn-open" mat-button (click)="drawer.toggle()">
+      <span class="material-icons">menu</span>
+    </button>
+  </div>
+
+  <div class="img__container">
+    <img src="../../../assets/producciones/sombreros-uno.jpg" alt="">
+  </div>
+
+  <div class="img__container">
+    <img src="../../../assets/arquitectura/arquitectura-uno.jpg" alt="">
+  </div>
+
+  <div class="img__container">
+    <img src="../../../assets/camp/camp-uno.jpg" alt="">
+  </div>
+
+  <div class="img__container">
+    <img src="../../../assets/sesiones/sesiones-uno.jpg" alt="">
+  </div>
+
+  <div class="img__container">
+    <img src="../../../assets/personal/personal-uno.jpg" alt="">
+  </div>
+
+
+</mat-drawer-container>
