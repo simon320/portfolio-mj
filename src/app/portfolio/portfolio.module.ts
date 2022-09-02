@@ -5,6 +5,7 @@ import { PortfolioRoutingModule } from './portfolio-routing.module';
 import { HomeComponent } from './pages/home/home.component';
 import { ProduccionesComponent } from './pages/producciones/producciones.component';
 import { ArquitecturaDecoComponent } from './pages/arquitectura-deco/arquitectura-deco.component';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({

@@ -8,7 +8,7 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
-    path: '',
+    path: 'home',
     loadChildren: ()=> import('./portfolio/portfolio.module').then( m => m.PortfolioModule)
   },
   {

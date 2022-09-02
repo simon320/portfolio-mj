@@ -23,6 +23,7 @@
       margin: auto;
       font-family: 'Commissioner', sans-serif;
       font-size: 1.2rem;
+      font-weight: 800;
     }
   }
   
@@ -68,47 +69,3 @@
   }
 
 
-  .producciones {
-    background-image: url('../../../assets/producciones/sombreros-uno.jpg');
-    background-size: cover;
-  }
-
-  .arquitectura {
-    background-image: url('../../../assets/arquitectura/arquitectura-uno.jpg');
-    background-size: cover;
-  }
-
-  .camp {
-    background-image: url('../../../assets/camp/camp-uno.jpg');
-    background-size: cover;
-    background-position-x: center;
-  }
-
-  .sesiones {
-    background-image: url('../../../assets/sesiones/sesiones-uno.jpg');
-    background-size: cover;
-    background-position-x: center;
-  }
-
-  .personal {
-    background-image: url('../../../assets/personal/personal-uno.jpg');
-    background-size: cover;
-    background-position-y: center;
-  }
-
-  .div__route-seccion {
-    opacity: 0;
-    width: 92%;
-    height: 92%;
-    margin: 4%;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    background-color: rgba(255, 255, 255, 0.816);
-    font-weight: 500;
-
-    &:hover {
-      animation: showLink 0.5s forwards;
-    }
-
-  }

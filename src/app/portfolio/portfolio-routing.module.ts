@@ -4,9 +4,14 @@ import { ProduccionesComponent } from './pages/producciones/producciones.compone
 import { ArquitecturaDecoComponent } from './pages/arquitectura-deco/arquitectura-deco.component';
 
 const routes: Routes = [
-  { path: 'producciones', component: ProduccionesComponent },
-  { path: 'arquitectura-deco', component: ArquitecturaDecoComponent },
-  { path: '**', redirectTo: 'home' }
+  {
+    path:'',
+    children: [
+      { path: 'producciones', component: ProduccionesComponent },
+      { path: 'arquitectura-deco', component: ArquitecturaDecoComponent },
+      { path: '**', redirectTo: 'home' }
+    ]
+  }
 ];
 
 @NgModule({

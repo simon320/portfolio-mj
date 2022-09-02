@@ -1,0 +1,27 @@
+h2 {
+    text-align: center;
+    font-weight: 300;
+}
+
+.container {
+    height: 100%;
+    width: 100vw;
+}
+
+.container__half {
+    display: flex;
+    gap: 2%;
+}
+
+.img__full {
+    width: 100vw;
+}
+
+.img__half {
+    width: 49%;
+}
+
+.title__description {
+    text-align: center;
+    color: #989696;
+}

@@ -1,2 +1,35 @@
-<app-menu></app-menu>
-<router-outlet></router-outlet>
+
+
+<mat-drawer-container class="example-container">
+
+
+    <mat-drawer #drawer class="example-sidenav" mode="over" position="end">
+  
+      <div class="menu__container" #drawer>
+        <button class="menu__btn-close" type="button" mat-button (click)="drawer.toggle()">
+          <span class="material-icons">close</span>
+        </button>
+  
+        <a routerLink="./home" (click)="drawer.toggle()">Home</a>
+        <a routerLink="./home/producciones" (click)="drawer.toggle()">Producciones</a>
+        <a routerLink="./home/arquitectura-deco" (click)="drawer.toggle()">Arquitectura/Deco</a>
+        <a href="">Work</a>
+        <a href="">Work</a>
+        <a href="">Work</a>
+      </div>
+  
+    </mat-drawer>
+  
+  
+    <div class="example-sidenav-content">
+      <h1>MARIEL JUAREZ</h1>
+      <button type="button" class="menu__btn-open" mat-button (click)="drawer.toggle()">
+        <span class="material-icons">menu</span>
+      </button>
+    </div>
+  
+  
+    <router-outlet></router-outlet>
+  
+  
+  </mat-drawer-container>
