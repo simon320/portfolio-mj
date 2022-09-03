@@ -3,8 +3,8 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-arquitectura-deco',
   templateUrl: './arquitectura-deco.component.html',
-  styles: [
-  ]
+  styleUrls: [ './arquitectura-deco.scss' ]
+  
 })
 export class ArquitecturaDecoComponent implements OnInit {
 
