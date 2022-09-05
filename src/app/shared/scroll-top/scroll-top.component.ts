@@ -2,14 +2,12 @@ import { Component, HostListener, Inject, ElementRef, OnInit, ViewChild } from '
 import { DOCUMENT } from '@angular/common';
 
 @Component({
-  selector: 'app-arquitectura-deco',
-  templateUrl: './arquitectura-deco.component.html',
-  styleUrls: [ './arquitectura-deco.scss' ]
-  
+  selector: 'app-scroll-top',
+  templateUrl: './scroll-top.component.html',
+  styles: [
+  ]
 })
-export class ArquitecturaDecoComponent implements OnInit {
-
-  windowScroller!: boolean;
+export class ScrollTopComponent implements OnInit {
 
   constructor( @Inject(DOCUMENT) private document: Document ) { }
   scrollToTop(): void {
@@ -22,15 +20,7 @@ export class ArquitecturaDecoComponent implements OnInit {
     })()
   }
 
-
   ngOnInit(): void {
-  }
-
-
-
-  backToTop() {
-    console.log('Hola')
-    window.scrollTo(0,0);
   }
 
 }

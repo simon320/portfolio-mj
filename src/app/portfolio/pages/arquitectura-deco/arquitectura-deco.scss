@@ -13,7 +13,7 @@ h2 {
     justify-content: space-between;
     gap: 1%;
     width: 100vw;
-    height: 100vh;
+    height: 500px;
 
     .img__flex-full {
         width: 100%;
@@ -35,18 +35,4 @@ h2 {
         margin-bottom: $item-mb;
     }
 
-    .container__btn-up {
-        width: 100%;
-        justify-content: center;
-        display: flex;
-        margin-bottom: 30%;
-
-        span {
-            color: #939393;
-        }
-        h4 {
-            display: inline;
-            color: #939393;
-        }
-    }
 }

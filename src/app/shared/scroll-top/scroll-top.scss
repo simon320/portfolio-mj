@@ -1,0 +1,16 @@
+.container__btn-up {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 30%;
+    background-color: aquamarine;
+    cursor: pointer;
+
+    span {
+        color: #939393;
+    }
+    h4 {
+        display: inline;
+        color: #939393;
+    }
+}

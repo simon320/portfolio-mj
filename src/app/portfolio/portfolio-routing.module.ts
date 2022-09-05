@@ -2,12 +2,14 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ProduccionesComponent } from './pages/producciones/producciones.component';
 import { ArquitecturaDecoComponent } from './pages/arquitectura-deco/arquitectura-deco.component';
+import { PersonalComponent } from './pages/personal/personal.component';
 
 const routes: Routes = [
   {
     path:'',
     children: [
       { path: 'producciones', component: ProduccionesComponent },
+      { path: 'personal', component: PersonalComponent },
       { path: 'arquitectura-deco', component: ArquitecturaDecoComponent },
       { path: '**', redirectTo: 'home' }
     ]

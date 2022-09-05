@@ -7,10 +7,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { RouterModule } from '@angular/router';
 import { MaterialModule } from './material/material.module';
 import { FormsModule } from '@angular/forms';
+import { ScrollTopComponent } from './shared/scroll-top/scroll-top.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ScrollTopComponent
   ],
   imports: [
     BrowserModule,

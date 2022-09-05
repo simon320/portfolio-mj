@@ -6,13 +6,17 @@ import { HomeComponent } from './pages/home/home.component';
 import { ProduccionesComponent } from './pages/producciones/producciones.component';
 import { ArquitecturaDecoComponent } from './pages/arquitectura-deco/arquitectura-deco.component';
 import { RouterModule } from '@angular/router';
+import { PersonalComponent } from './pages/personal/personal.component';
+import { CarrouselComponent } from './components/carrousel/carrousel.component';
 
 
 @NgModule({
   declarations: [
     HomeComponent,
     ProduccionesComponent,
-    ArquitecturaDecoComponent
+    ArquitecturaDecoComponent,
+    PersonalComponent,
+    CarrouselComponent
   ],
   imports: [
     CommonModule,
