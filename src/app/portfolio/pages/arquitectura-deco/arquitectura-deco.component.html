@@ -1,8 +1,8 @@
 <h2>ARQUITECTURA/DECO</h2>
 
-<div class="container__flex" #scroll>
-
-    <img class="img__flex-full" src="../../../../assets/arquitectura/arquitectura-1.jpg" alt="">
+<div class="container__flex" *ngIf="!carousel">
+    
+    <img (click)="showCarousel()" class="img__flex-full" src="../../../../assets/arquitectura/arquitectura-1.jpg" alt="">
 
     <img class="img__flex-half" src="../../../../assets/arquitectura/arquitectura-2.jpg" alt="">
     <img class="img__flex-half" src="../../../../assets/arquitectura/arquitectura-3.jpg" alt="">
@@ -27,6 +27,11 @@
     <img class="img__flex-half" src="../../../../assets/arquitectura/arquitectura-15.jpg" alt="">
 
 </div>
-   
+
+<app-carousel *ngIf="carousel" [images]="images"></app-carousel>
+
+
+
+
 
 

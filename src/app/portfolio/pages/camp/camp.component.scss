@@ -1,4 +1,3 @@
-
 $item-mb: 10%;
 
 h2 {
@@ -26,14 +25,23 @@ h2 {
     }
 
     .img__flex-3-quarter {
-        width: 64%;
+        width: 68%;
         margin-bottom: $item-mb;
     }
 
     .img__flex-1-quarter {
+        width: 30%;
+        margin-bottom: $item-mb;
+    }
+
+    .img__flex-3-quarter- {
+        width: 64%;
+        margin-bottom: $item-mb;
+    }
+
+    .img__flex-1-quarter- {
         width: 34%;
         margin-bottom: $item-mb;
     }
 
 }
-

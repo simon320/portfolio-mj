@@ -1,5 +1,4 @@
-import { Component, HostListener, Inject, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { DOCUMENT } from '@angular/common';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-arquitectura-deco',
@@ -8,29 +7,75 @@ import { DOCUMENT } from '@angular/common';
   
 })
 export class ArquitecturaDecoComponent implements OnInit {
+  carousel: boolean = false;
 
-  windowScroller!: boolean;
-
-  constructor( @Inject(DOCUMENT) private document: Document ) { }
-  scrollToTop(): void {
-    (function smoothscroll(): void {
-      const currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
-      if( currentScroll > 0) {
-        window.requestAnimationFrame(smoothscroll);
-        window.scrollTo(0, currentScroll - (currentScroll / 8));
-      }
-    })()
-  }
-
+  images = [
+    {
+      imageSrc: '../../../../assets/arquitectura/arquitectura-1.jpg',
+      imageAlt: 'foto',
+    },
+    {
+      imageSrc: '../../../../assets/arquitectura/arquitectura-2.jpg',
+      imageAlt: 'foto',
+    },
+    {
+      imageSrc: '../../../../assets/arquitectura/arquitectura-3.jpg',
+      imageAlt: 'foto',
+    },
+    {
+      imageSrc: '../../../../assets/arquitectura/arquitectura-4.jpg',
+      imageAlt: 'foto',
+    },
+    {
+      imageSrc: '../../../../assets/arquitectura/arquitectura-5.jpg',
+      imageAlt: 'foto',
+    },
+    {
+      imageSrc: '../../../../assets/arquitectura/arquitectura-6.jpg',
+      imageAlt: 'foto',
+    },
+    {
+      imageSrc: '../../../../assets/arquitectura/arquitectura-7.jpg',
+      imageAlt: 'foto',
+    },
+    {
+      imageSrc: '../../../../assets/arquitectura/arquitectura-8.jpg',
+      imageAlt: 'foto',
+    },
+    {
+      imageSrc: '../../../../assets/arquitectura/arquitectura-9.jpg',
+      imageAlt: 'foto',
+    },
+    {
+      imageSrc: '../../../../assets/arquitectura/arquitectura-10.jpg',
+      imageAlt: 'foto',
+    },
+    {
+      imageSrc: '../../../../assets/arquitectura/arquitectura-11.jpg',
+      imageAlt: 'foto',
+    },
+    {
+      imageSrc: '../../../../assets/arquitectura/arquitectura-12.jpg',
+      imageAlt: 'foto',
+    },
+    {
+      imageSrc: '../../../../assets/arquitectura/arquitectura-13.jpg',
+      imageAlt: 'foto',
+    },
+    {
+      imageSrc: '../../../../assets/arquitectura/arquitectura-14.jpg',
+      imageAlt: 'foto',
+    },
+    {
+      imageSrc: '../../../../assets/arquitectura/arquitectura-15.jpg',
+      imageAlt: 'foto'
+    },
+  ]
 
   ngOnInit(): void {
   }
 
-
-
-  backToTop() {
-    console.log('Hola')
-    window.scrollTo(0,0);
+  showCarousel(): void {
+    this.carousel = true;
   }
-
 }
