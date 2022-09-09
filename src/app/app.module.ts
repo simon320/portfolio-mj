@@ -8,11 +8,13 @@ import { RouterModule } from '@angular/router';
 import { MaterialModule } from './material/material.module';
 import { FormsModule } from '@angular/forms';
 import { ScrollTopComponent } from './shared/scroll-top/scroll-top.component';
+import { MenuComponent } from './shared/menu/menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ScrollTopComponent
+    ScrollTopComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,

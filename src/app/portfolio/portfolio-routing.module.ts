@@ -3,14 +3,18 @@ import { RouterModule, Routes } from '@angular/router';
 import { ProduccionesComponent } from './pages/producciones/producciones.component';
 import { ArquitecturaDecoComponent } from './pages/arquitectura-deco/arquitectura-deco.component';
 import { PersonalComponent } from './pages/personal/personal.component';
+import { CampComponent } from './pages/camp/camp.component';
+import { SesionesComponent } from './pages/sesiones/sesiones.component';
 
 const routes: Routes = [
   {
     path:'',
     children: [
       { path: 'producciones', component: ProduccionesComponent },
-      { path: 'personal', component: PersonalComponent },
       { path: 'arquitectura-deco', component: ArquitecturaDecoComponent },
+      { path: 'camp', component: CampComponent },
+      { path: 'sesiones', component: SesionesComponent },
+      { path: 'personal', component: PersonalComponent },
       { path: '**', redirectTo: 'home' }
     ]
   }

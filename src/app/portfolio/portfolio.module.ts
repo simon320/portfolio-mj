@@ -5,9 +5,10 @@ import { PortfolioRoutingModule } from './portfolio-routing.module';
 import { HomeComponent } from './pages/home/home.component';
 import { ProduccionesComponent } from './pages/producciones/producciones.component';
 import { ArquitecturaDecoComponent } from './pages/arquitectura-deco/arquitectura-deco.component';
-import { RouterModule } from '@angular/router';
 import { PersonalComponent } from './pages/personal/personal.component';
-import { CarrouselComponent } from './components/carrousel/carrousel.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
+import { CampComponent } from './pages/camp/camp.component';
+import { SesionesComponent } from './pages/sesiones/sesiones.component';
 
 
 @NgModule({
@@ -16,7 +17,9 @@ import { CarrouselComponent } from './components/carrousel/carrousel.component';
     ProduccionesComponent,
     ArquitecturaDecoComponent,
     PersonalComponent,
-    CarrouselComponent
+    CarouselComponent,
+    CampComponent,
+    SesionesComponent
   ],
   imports: [
     CommonModule,
