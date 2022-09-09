@@ -15,24 +15,25 @@ h2 {
     width: 100vw;
     height: 500px;
 
+    img {
+        margin-bottom: $item-mb;
+        cursor: zoom-in;
+    }
+
     .img__flex-full {
         width: 100%;
-        margin-bottom: $item-mb;
     }
 
     .img__flex-half {
         width: 49%;
-        margin-bottom: $item-mb;
     }
 
     .img__flex-3-quarter {
         width: 64%;
-        margin-bottom: $item-mb;
     }
 
     .img__flex-1-quarter {
         width: 34%;
-        margin-bottom: $item-mb;
     }
 
 }

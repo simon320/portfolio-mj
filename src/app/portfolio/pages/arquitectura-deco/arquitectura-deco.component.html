@@ -1,34 +1,34 @@
 <h2>ARQUITECTURA/DECO</h2>
 
-<div class="container__flex" *ngIf="!carousel">
+<div class="container__flex">
     
-    <img (click)="showCarousel()" class="img__flex-full" src="../../../../assets/arquitectura/arquitectura-1.jpg" alt="">
+    <img (click)="showCarousel(0)" class="img__flex-full" src="../../../../assets/arquitectura/arquitectura-1.jpg" alt="">
 
-    <img class="img__flex-half" src="../../../../assets/arquitectura/arquitectura-2.jpg" alt="">
-    <img class="img__flex-half" src="../../../../assets/arquitectura/arquitectura-3.jpg" alt="">
+    <img (click)="showCarousel(1)" class="img__flex-half" src="../../../../assets/arquitectura/arquitectura-2.jpg" alt="">
+    <img (click)="showCarousel(2)" class="img__flex-half" src="../../../../assets/arquitectura/arquitectura-3.jpg" alt="">
 
-    <img class="img__flex-3-quarter" src="../../../../assets/arquitectura/arquitectura-4.jpg" alt="">
-    <img class="img__flex-1-quarter" src="../../../../assets/arquitectura/arquitectura-5.jpg" alt="">
+    <img (click)="showCarousel(3)" class="img__flex-3-quarter" src="../../../../assets/arquitectura/arquitectura-4.jpg" alt="">
+    <img (click)="showCarousel(4)" class="img__flex-1-quarter" src="../../../../assets/arquitectura/arquitectura-5.jpg" alt="">
 
-    <img class="img__flex-half" src="../../../../assets/arquitectura/arquitectura-6.jpg" alt="">
-    <img class="img__flex-half" src="../../../../assets/arquitectura/arquitectura-7.jpg" alt="">
+    <img (click)="showCarousel(5)" class="img__flex-half" src="../../../../assets/arquitectura/arquitectura-6.jpg" alt="">
+    <img (click)="showCarousel(6)" class="img__flex-half" src="../../../../assets/arquitectura/arquitectura-7.jpg" alt="">
 
-    <img class="img__flex-half" src="../../../../assets/arquitectura/arquitectura-8.jpg" alt="">
-    <img class="img__flex-half" src="../../../../assets/arquitectura/arquitectura-9.jpg" alt="">
+    <img (click)="showCarousel(7)" class="img__flex-half" src="../../../../assets/arquitectura/arquitectura-8.jpg" alt="">
+    <img (click)="showCarousel(8)" class="img__flex-half" src="../../../../assets/arquitectura/arquitectura-9.jpg" alt="">
     
-    <img class="img__flex-full" src="../../../../assets/arquitectura/arquitectura-10.jpg" alt="">
+    <img (click)="showCarousel(9)" class="img__flex-full" src="../../../../assets/arquitectura/arquitectura-10.jpg" alt="">
     
-    <img class="img__flex-half" src="../../../../assets/arquitectura/arquitectura-11.jpg" alt="">
-    <img class="img__flex-half" src="../../../../assets/arquitectura/arquitectura-12.jpg" alt="">
+    <img (click)="showCarousel(10)" class="img__flex-half" src="../../../../assets/arquitectura/arquitectura-11.jpg" alt="">
+    <img (click)="showCarousel(11)" class="img__flex-half" src="../../../../assets/arquitectura/arquitectura-12.jpg" alt="">
     
-    <img class="img__flex-full" src="../../../../assets/arquitectura/arquitectura-13.jpg" alt="">
+    <img (click)="showCarousel(12)" class="img__flex-full" src="../../../../assets/arquitectura/arquitectura-13.jpg" alt="">
 
-    <img class="img__flex-half" src="../../../../assets/arquitectura/arquitectura-14.jpg" alt="">
-    <img class="img__flex-half" src="../../../../assets/arquitectura/arquitectura-15.jpg" alt="">
+    <img (click)="showCarousel(13)" class="img__flex-half" src="../../../../assets/arquitectura/arquitectura-14.jpg" alt="">
+    <img (click)="showCarousel(14)" class="img__flex-half" src="../../../../assets/arquitectura/arquitectura-15.jpg" alt="">
 
 </div>
 
-<app-carousel *ngIf="carousel" [images]="images"></app-carousel>
+<app-carousel [showCarousel]="carousel" [indexImg]="indexImg" [images]="images" (outputCarousel)="hideCarousel($event)"></app-carousel>
 
 
 

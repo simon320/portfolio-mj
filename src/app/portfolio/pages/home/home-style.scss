@@ -3,51 +3,58 @@
     background-size: cover;
   }
 
-  .arquitectura {
-    background-image: url('../../../../assets/arquitectura/arquitectura-1.jpg');
-    background-size: cover;
+.arquitectura {
+  background-image: url('../../../../assets/arquitectura/arquitectura-1.jpg');
+  background-size: cover;
+}
+
+.camp {
+  background-image: url('../../../../assets/camp/camp-1.jpg');
+  background-size: cover;
+  background-position-x: center;
+}
+
+.sesiones {
+  background-image: url('../../../../assets/sesiones/sesiones-1.jpg');
+  background-size: cover;
+  background-position-x: center;
+}
+
+.personal {
+  background-image: url('../../../../assets/personal/personal-1.jpg');
+  background-size: cover;
+  background-position-y: center;
+}
+
+.div__route-seccion {
+  opacity: 0;
+  width: 92%;
+  height: 92%;
+  margin: 4%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.816);
+  font-weight: 500;
+
+  &:hover {
+    animation: showLink 0.5s forwards;
   }
 
-  .camp {
-    background-image: url('../../../../assets/camp/camp-1.jpg');
-    background-size: cover;
-    background-position-x: center;
-  }
+}
 
-  .sesiones {
-    background-image: url('../../../../assets/sesiones/sesiones-1.jpg');
-    background-size: cover;
-    background-position-x: center;
-  }
+a {
+  font-family: 'Commissioner', sans-serif;
+  font-size: 1.2rem;
+  align-self: center;
+  text-decoration: none;
+  color: black;
+  padding: 15px 0;
+}
 
-  .personal {
-    background-image: url('../../../../assets/personal/personal-1.jpg');
-    background-size: cover;
-    background-position-y: center;
-  }
-
-  .div__route-seccion {
-    opacity: 0;
-    width: 92%;
-    height: 92%;
-    margin: 4%;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    background-color: rgba(255, 255, 255, 0.816);
-    font-weight: 500;
-
-    &:hover {
-      animation: showLink 0.5s forwards;
-    }
-
-  }
-
-  a {
-    font-family: 'Commissioner', sans-serif;
-    font-size: 1.2rem;
-    align-self: center;
-    text-decoration: none;
-    color: black;
-    padding: 15px 0;
-  }
+.img__container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+} 

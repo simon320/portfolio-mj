@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-arquitectura-deco',
@@ -6,8 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: [ './arquitectura-deco.scss' ]
   
 })
-export class ArquitecturaDecoComponent implements OnInit {
+export class ArquitecturaDecoComponent {
+
   carousel: boolean = false;
+  indexImg: number = 0;
 
   images = [
     {
@@ -72,10 +74,14 @@ export class ArquitecturaDecoComponent implements OnInit {
     },
   ]
 
-  ngOnInit(): void {
+  showCarousel( index: number) {
+    this.carousel = true;
+    this.indexImg = index;
+    console.log(index)
   }
 
-  showCarousel(): void {
-    this.carousel = true;
+  hideCarousel(e: boolean){
+    this.carousel = e;
   }
+
 }
