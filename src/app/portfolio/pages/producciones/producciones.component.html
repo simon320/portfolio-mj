@@ -3,29 +3,16 @@
 
 <div class="container__flex">
     
-    <img class="img__flex-full" src="../../../../assets/producciones/prod-1.jpg" alt="">
-    
-    <img class="img__flex-full" src="../../../../assets/producciones/prod-2.jpg" alt="">
-
-    <img class="img__flex-half" src="../../../../assets/producciones/prod-3.jpg" alt="">
-    <img class="img__flex-half" src="../../../../assets/producciones/prod-4.jpg" alt="">
-    
-    <img class="img__flex-half" src="../../../../assets/producciones/prod-5.jpg" alt="">
-    <img class="img__flex-half" src="../../../../assets/producciones/prod-6.jpg" alt="">
-    
-    <img class="img__flex-full" src="../../../../assets/producciones/prod-7.jpg" alt="">
-    
-    <img class="img__flex-half" src="../../../../assets/producciones/prod-8.jpg" alt="">
-    <img class="img__flex-half" src="../../../../assets/producciones/prod-9.jpg" alt="">
-    
-    <img class="img__flex-1-quarter" src="../../../../assets/producciones/prod-10.jpg" alt="">
-    <img class="img__flex-3-quarter" src="../../../../assets/producciones/prod-11.jpg" alt="">
-    
-    <img class="img__flex-full" src="../../../../assets/producciones/prod-12.jpg" alt="">
-        
-    <img class="img__flex-half" src="../../../../assets/producciones/prod-13.jpg" alt="">
-    <img class="img__flex-half" src="../../../../assets/producciones/prod-14.jpg" alt="">
-        
-    <img class="img__flex-full" src="../../../../assets/producciones/prod-15.jpg" alt="">
+    <img *ngFor="let image of images; let i = index" 
+        (click)="showCarousel( i )" 
+        class={{image.className}} 
+        src={{image.imageSrc}}
+        alt={{image.imageAlt}}>
 
 </div>
+
+<app-carousel [showCarousel]="carousel" 
+            [indexImg]="indexImg" 
+            [images]="images" 
+            (outputCarousel)="hideCarousel($event)">
+        </app-carousel>

@@ -1,15 +1,101 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-producciones',
   templateUrl: './producciones.component.html',
   styleUrls: ['./producciones.scss']
 })
-export class ProduccionesComponent implements OnInit {
+export class ProduccionesComponent {
 
-  constructor() { }
+  carousel: boolean = false;
+  indexImg: number = 0;
 
-  ngOnInit(): void {
+  images = [
+    {
+      imageSrc: '../../../../assets/producciones/prod-1.jpg',
+      imageAlt: 'foto',
+      className: 'img__flex-full'
+    },
+    {
+      imageSrc: '../../../../assets/producciones/prod-2.jpg',
+      imageAlt: 'foto',
+      className: 'img__flex-full'
+    },
+    {
+      imageSrc: '../../../../assets/producciones/prod-3.jpg',
+      imageAlt: 'foto',
+      className: 'img__flex-half'
+    },
+    {
+      imageSrc: '../../../../assets/producciones/prod-4.jpg',
+      imageAlt: 'foto',
+      className: 'img__flex-half'
+    },
+    {
+      imageSrc: '../../../../assets/producciones/prod-5.jpg',
+      imageAlt: 'foto',
+      className: 'img__flex-half'
+    },
+    {
+      imageSrc: '../../../../assets/producciones/prod-6.jpg',
+      imageAlt: 'foto',
+      className: 'img__flex-half'
+    },
+    {
+      imageSrc: '../../../../assets/producciones/prod-7.jpg',
+      imageAlt: 'foto',
+      className: 'img__flex-full'
+    },
+    {
+      imageSrc: '../../../../assets/producciones/prod-8.jpg',
+      imageAlt: 'foto',
+      className: 'img__flex-half'
+    },
+    {
+      imageSrc: '../../../../assets/producciones/prod-9.jpg',
+      imageAlt: 'foto',
+      className: 'img__flex-half'
+    },
+    {
+      imageSrc: '../../../../assets/producciones/prod-10.jpg',
+      imageAlt: 'foto',
+      className: 'img__flex-1-quarter'
+    },
+    {
+      imageSrc: '../../../../assets/producciones/prod-11.jpg',
+      imageAlt: 'foto',
+      className: 'img__flex-3-quarter'
+    },
+    {
+      imageSrc: '../../../../assets/producciones/prod-12.jpg',
+      imageAlt: 'foto',
+      className: 'img__flex-full'
+    },
+    {
+      imageSrc: '../../../../assets/producciones/prod-13.jpg',
+      imageAlt: 'foto',
+      className: 'img__flex-half'
+    },
+    {
+      imageSrc: '../../../../assets/producciones/prod-14.jpg',
+      imageAlt: 'foto',
+      className: 'img__flex-half'
+    },
+    {
+      imageSrc: '../../../../assets/producciones/prod-15.jpg',
+      imageAlt: 'foto',
+      className: 'img__flex-full'
+    },
+  ]
+
+  showCarousel( index: number) {
+    this.carousel = true;
+    this.indexImg = index;
+    console.log(index)
+  }
+
+  hideCarousel(e: boolean){
+    this.carousel = e;
   }
 
 }
