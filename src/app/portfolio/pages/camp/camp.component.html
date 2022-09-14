@@ -2,47 +2,56 @@
 
 <div class="container__flex">
     
-    <img class="img__flex-full" src="../../../../assets/camp/camp-1.jpg" alt="">
+    <img (click)="showCarousel(0)" class="img__flex-full" src="../../../../assets/camp/camp-1.jpg" alt="">
+    <p>CHICHA indumentaria</p>
     
-    <img class="img__flex-half" src="../../../../assets/camp/camp-2.jpg" alt="">
-    <img class="img__flex-half" src="../../../../assets/camp/camp-3.jpg" alt="">
+    <img (click)="showCarousel(1)" class="img__flex-half" src="../../../../assets/camp/camp-2.jpg" alt="">
+    <img (click)="showCarousel(2)" class="img__flex-half" src="../../../../assets/camp/camp-3.jpg" alt="">
 
-    <img class="img__flex-full" src="../../../../assets/camp/camp-4.jpg" alt="">
+    <img (click)="showCarousel(3)" class="img__flex-full" src="../../../../assets/camp/camp-4.jpg" alt="">
+  
+ 
     
-    <img class="img__flex-full" src="../../../../assets/camp/camp-5.jpg" alt="">
-    
-    <img class="img__flex-1-quarter" src="../../../../assets/camp/camp-6.jpg" alt="">
-    <img class="img__flex-3-quarter" src="../../../../assets/camp/camp-7.jpg" alt="">
-    
-    <img class="img__flex-full" src="../../../../assets/camp/camp-8.jpg" alt="">
-    
-    <img class="img__flex-full" src="../../../../assets/camp/camp-9.jpg" alt="">
+    <img (click)="showCarousel(4)" class="img__flex-full" src="../../../../assets/camp/camp-5.jpg" alt="">   
+    <p>Aranza Rivas BIKINIS</p>
 
-    <img class="img__flex-half" src="../../../../assets/camp/camp-10.jpg" alt="">
-    <img class="img__flex-half" src="../../../../assets/camp/camp-11.jpg" alt="">
-
-    <img class="img__flex-full" src="../../../../assets/camp/camp-12.jpg" alt="">
-
-    <img class="img__flex-full" src="../../../../assets/camp/camp-13.jpg" alt="">
-
-    <img class="img__flex-3-quarter" src="../../../../assets/camp/camp-14.jpg" alt="">
-    <img class="img__flex-1-quarter" src="../../../../assets/camp/camp-15.jpg" alt="">
-
-    <img class="img__flex-full" src="../../../../assets/camp/camp-16.jpg" alt="">
+    <img (click)="showCarousel(5)" class="img__flex-1-quarter" src="../../../../assets/camp/camp-6.jpg" alt="">
+    <img (click)="showCarousel(6)" class="img__flex-3-quarter" src="../../../../assets/camp/camp-7.jpg" alt="">
     
-    <img class="img__flex-3-quarter-" src="../../../../assets/camp/camp-17.jpg" alt="">
-    <img class="img__flex-1-quarter-" src="../../../../assets/camp/camp-18.jpg" alt="">
+    <img (click)="showCarousel(7)" class="img__flex-full" src="../../../../assets/camp/camp-8.jpg" alt="">
     
-    <img class="img__flex-full" src="../../../../assets/camp/camp-19.jpg" alt="">
-    
-    <img class="img__flex-full" src="../../../../assets/camp/camp-20.jpg" alt="">
+    <img (click)="showCarousel(8)" class="img__flex-full" src="../../../../assets/camp/camp-9.jpg" alt="">
 
-    <img class="img__flex-half" src="../../../../assets/camp/camp-21.jpg" alt="">
-    <img class="img__flex-half" src="../../../../assets/camp/camp-22.jpg" alt="">
+    <img (click)="showCarousel(9)" class="img__flex-half" src="../../../../assets/camp/camp-10.jpg" alt="">
+    <img (click)="showCarousel(10)" class="img__flex-half" src="../../../../assets/camp/camp-11.jpg" alt="">
 
-    <img class="img__flex-full" src="../../../../assets/camp/camp-23.jpg" alt="">
+
     
-    <img class="img__flex-3-quarter-" src="../../../../assets/camp/camp-24.jpg" alt="">
-    <img class="img__flex-1-quarter-" src="../../../../assets/camp/camp-25.jpg" alt="">
+    <img (click)="showCarousel(11)" class="img__flex-full" src="../../../../assets/camp/camp-12.jpg" alt="">
+    <p>FLOR DE UN DÍA - Local de Indumentaria</p>
+
+    <img (click)="showCarousel(12)" class="img__flex-full" src="../../../../assets/camp/camp-13.jpg" alt="">
+
+    <img (click)="showCarousel(13)" class="img__flex-3-quarter" src="../../../../assets/camp/camp-14.jpg" alt="">
+    <img (click)="showCarousel(14)" class="img__flex-1-quarter" src="../../../../assets/camp/camp-15.jpg" alt="">
+
+    <img (click)="showCarousel(15)" class="img__flex-full" src="../../../../assets/camp/camp-16.jpg" alt="">
+    
+    <img (click)="showCarousel(16)" class="img__flex-3-quarter-" src="../../../../assets/camp/camp-17.jpg" alt="">
+    <img (click)="showCarousel(17)" class="img__flex-1-quarter-" src="../../../../assets/camp/camp-18.jpg" alt="">
+    
+    <img (click)="showCarousel(18)" class="img__flex-full" src="../../../../assets/camp/camp-19.jpg" alt="">
+    
+    <img (click)="showCarousel(19)" class="img__flex-full" src="../../../../assets/camp/camp-20.jpg" alt="">
+
+    <img (click)="showCarousel(20)" class="img__flex-half" src="../../../../assets/camp/camp-21.jpg" alt="">
+    <img (click)="showCarousel(21)" class="img__flex-half" src="../../../../assets/camp/camp-22.jpg" alt="">
+
+    <img (click)="showCarousel(22)" class="img__flex-full" src="../../../../assets/camp/camp-23.jpg" alt="">
+    
+    <img (click)="showCarousel(23)" class="img__flex-3-quarter-" src="../../../../assets/camp/camp-24.jpg" alt="">
+    <img (click)="showCarousel(24)" class="img__flex-1-quarter-" src="../../../../assets/camp/camp-25.jpg" alt="">
 
 </div>
+
+<app-carousel [showCarousel]="carousel" [indexImg]="indexImg" [images]="images" (outputCarousel)="hideCarousel($event)"></app-carousel>

@@ -44,14 +44,33 @@ h2 {
         margin-bottom: $item-mb;
     }
 
-    .img__flex-3 {
-        width: 39%;
-        margin-bottom: $item-mb;
+    .sub__container--flex {
+        display: flex;
+        justify-content: space-between;
+        
+        .img__flex-3 {
+            width: 36%;
+            margin-bottom: $item-mb;
+        }
+        
+        .img__flex-2 {
+            width: 24%;
+            margin-bottom: $item-mb;
+        }
     }
-
-    .img__flex-2 {
-        width: 18%;
-        margin-bottom: $item-mb;
-    }
-
 }
+
+@media (min-width: 600px) {
+    h2 {
+        font-size: 2.2rem;
+    }
+    .container__flex {
+        box-sizing: border-box;
+        padding: 3rem;
+    }
+    .img__flex-full, .img__flex-half {
+        max-height: 80vh;
+        max-width: fit-content;
+        margin: auto;
+    }
+  }

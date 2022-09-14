@@ -1,4 +1,4 @@
-$item-mb: 10%;
+$item-mt: 10%;
 
 h2 {
     text-align: center;
@@ -16,32 +16,49 @@ h2 {
 
     .img__flex-full {
         width: 100%;
-        margin-bottom: $item-mb;
+        margin-top: $item-mt;
     }
 
     .img__flex-half {
         width: 49%;
-        margin-bottom: $item-mb;
+        margin-top: $item-mt;
     }
 
     .img__flex-3-quarter {
         width: 68%;
-        margin-bottom: $item-mb;
+        margin-top: $item-mt;
     }
 
     .img__flex-1-quarter {
         width: 30%;
-        margin-bottom: $item-mb;
+        margin-top: $item-mt;
     }
 
     .img__flex-3-quarter- {
         width: 64%;
-        margin-bottom: $item-mb;
+        margin-top: $item-mt;
     }
 
     .img__flex-1-quarter- {
         width: 34%;
-        margin-bottom: $item-mb;
+        margin-top: $item-mt;
     }
-
 }
+
+@media (min-width: 600px) {
+    h2 {
+        font-size: 2.2rem;
+    }
+    .container__flex {
+        box-sizing: border-box;
+        padding: 3rem;
+    }
+    .img__flex-full, 
+    .img__flex-half, 
+    .img__flex-3-quarter, 
+    .img__flex-1-quarter {
+        max-height: 80vh;
+        max-width: fit-content;
+        margin: auto;
+    }
+  }

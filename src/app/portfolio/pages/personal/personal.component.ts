@@ -1,35 +1,64 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-personal',
   templateUrl: './personal.component.html',
   styleUrls: ['./personal.component.scss']
 })
-export class PersonalComponent implements OnInit {
-  title = 'carousel';
+export class PersonalComponent {
+
+  carousel: boolean = false;
+  indexImg: number = 0;
 
   images = [
     {
-      imageSrc: '../../../../assets/personal/DSC_7993.jpg',
+      imageSrc: '../../../../assets/personal/personal-1.jpg',
       imageAlt: 'foto',
     },
     {
-      imageSrc: '../../../../assets/personal/DSC_7994.jpg',
+      imageSrc: '../../../../assets/personal/personal-2.jpg',
       imageAlt: 'foto',
     },
     {
-      imageSrc: '../../../../assets/personal/DSC_9610.jpg',
+      imageSrc: '../../../../assets/personal/personal-3.jpg',
       imageAlt: 'foto',
     },
     {
-      imageSrc: '../../../../assets/personal/DSC_9611.jpg',
+      imageSrc: '../../../../assets/personal/personal-4.jpg',
       imageAlt: 'foto',
     },
+    {
+      imageSrc: '../../../../assets/personal/personal-5.jpg',
+      imageAlt: 'foto',
+    },
+    {
+      imageSrc: '../../../../assets/personal/personal-6.jpg',
+      imageAlt: 'foto',
+    },
+    {
+      imageSrc: '../../../../assets/personal/personal-7.jpg',
+      imageAlt: 'foto',
+    },
+    {
+      imageSrc: '../../../../assets/personal/personal-8.jpg',
+      imageAlt: 'foto',
+    },
+    {
+      imageSrc: '../../../../assets/personal/personal-9.jpg',
+      imageAlt: 'foto',
+    },
+    {
+      imageSrc: '../../../../assets/personal/personal-10.jpg',
+      imageAlt: 'foto',
+    }
   ]
 
-  constructor() { }
-
-  ngOnInit(): void {
+  showCarousel( index: number): void {
+    this.carousel = true;
+    this.indexImg = index;
   }
 
+  hideCarousel(e: boolean): void {
+    this.carousel = e;
+  }
 }

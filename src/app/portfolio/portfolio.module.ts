@@ -9,6 +9,7 @@ import { PersonalComponent } from './pages/personal/personal.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { CampComponent } from './pages/camp/camp.component';
 import { SesionesComponent } from './pages/sesiones/sesiones.component';
+import { BioComponent } from './pages/bio/bio.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { SesionesComponent } from './pages/sesiones/sesiones.component';
     PersonalComponent,
     CarouselComponent,
     CampComponent,
-    SesionesComponent
+    SesionesComponent,
+    BioComponent
   ],
   imports: [
     CommonModule,

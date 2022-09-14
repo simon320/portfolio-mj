@@ -31,7 +31,6 @@ export class CarouselComponent {
   }
 
   onPrevClick(): void {
-    console.log(this.selectedIndex)
     if(this.selectedIndex === 0) {
       this.selectedIndex = this.images.length -1;
     } else {
@@ -47,7 +46,7 @@ export class CarouselComponent {
     }
   }
 
-  close(){
+  close(): void{
     this.outputCarousel.emit(false);
   }
 

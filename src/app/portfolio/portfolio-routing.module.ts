@@ -5,6 +5,7 @@ import { ArquitecturaDecoComponent } from './pages/arquitectura-deco/arquitectur
 import { PersonalComponent } from './pages/personal/personal.component';
 import { CampComponent } from './pages/camp/camp.component';
 import { SesionesComponent } from './pages/sesiones/sesiones.component';
+import { BioComponent } from './pages/bio/bio.component';
 
 const routes: Routes = [
   {
@@ -15,6 +16,7 @@ const routes: Routes = [
       { path: 'camp', component: CampComponent },
       { path: 'sesiones', component: SesionesComponent },
       { path: 'personal', component: PersonalComponent },
+      { path: 'bio', component: BioComponent },
       { path: '**', redirectTo: 'home' }
     ]
   }
