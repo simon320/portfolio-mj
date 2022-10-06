@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-camp',
@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./camp.component.scss']
 })
 export class CampComponent {
+
+  @ViewChild('scroll') scroll!: ElementRef;
 
   carousel: boolean = false;
   indexImg: number = 0;
@@ -120,5 +122,9 @@ export class CampComponent {
 
   hideCarousel(e: boolean): void {
     this.carousel = e;
+  }
+
+  scrollTop() {
+    this.scroll.nativeElement.scrollTop = 0;
   }
 }

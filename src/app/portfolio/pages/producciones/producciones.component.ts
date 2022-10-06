@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-producciones',
@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./producciones.scss']
 })
 export class ProduccionesComponent {
+
+  @ViewChild('scroll') scroll!: ElementRef;
 
   carousel: boolean = false;
   indexImg: number = 0;
@@ -82,4 +84,7 @@ export class ProduccionesComponent {
     this.carousel = e;
   }
 
+  scrollTop() {
+    this.scroll.nativeElement.scrollTop = 0;
+  }
 }

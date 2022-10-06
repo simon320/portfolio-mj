@@ -1,39 +1,48 @@
+<div class="container" #scroll>
 
-<h2>PRODUCCIONES</h2>
+    <h2>PRODUCCIONES</h2>
 
-<div class="container__flex">
-    
-    <img (click)="showCarousel(0)" class="img__flex-full" src="../../../../assets/producciones/prod-1.jpg" alt="">
+    <div class="container__flex">
+        
+        <img (click)="showCarousel(0)" class="img__flex-full" src="../../../../assets/producciones/prod-1.jpg" alt="">
 
-    <p>Sofia Santos AMBIENTACIÓN</p>
-    
-    <img (click)="showCarousel(1)" class="img__flex-full" src="../../../../assets/producciones/prod-2.jpg" alt="">
+        <p>Sofia Santos AMBIENTACIÓN</p>
+        
+        <img (click)="showCarousel(1)" class="img__flex-full" src="../../../../assets/producciones/prod-2.jpg" alt="">
 
-    <img (click)="showCarousel(2)" class="img__flex-half" src="../../../../assets/producciones/prod-3.jpg" alt="">
-    <img (click)="showCarousel(3)" class="img__flex-half" src="../../../../assets/producciones/prod-4.jpg" alt="">
+        <img (click)="showCarousel(2)" class="img__flex-half" src="../../../../assets/producciones/prod-3.jpg" alt="">
+        <img (click)="showCarousel(3)" class="img__flex-half" src="../../../../assets/producciones/prod-4.jpg" alt="">
 
-    <img (click)="showCarousel(4)" class="img__flex-half" src="../../../../assets/producciones/prod-5.jpg" alt="">
-    <img (click)="showCarousel(5)" class="img__flex-half" src="../../../../assets/producciones/prod-6.jpg" alt="">
+        <img (click)="showCarousel(4)" class="img__flex-half" src="../../../../assets/producciones/prod-5.jpg" alt="">
+        <img (click)="showCarousel(5)" class="img__flex-half" src="../../../../assets/producciones/prod-6.jpg" alt="">
 
-    <img (click)="showCarousel(6)" class="img__flex-full" src="../../../../assets/producciones/prod-7.jpg" alt="">
+        <img (click)="showCarousel(6)" class="img__flex-full" src="../../../../assets/producciones/prod-7.jpg" alt="">
 
-    <p>FUTURISMO - Vestuarista/Florencia Cornide</p>
+        <p>FUTURISMO - Vestuarista/Florencia Cornide</p>
 
-    <img (click)="showCarousel(7)" class="img__flex-half" src="../../../../assets/producciones/prod-8.jpg" alt="">
-    <img (click)="showCarousel(8)" class="img__flex-half" src="../../../../assets/producciones/prod-9.jpg" alt="">
+        <img (click)="showCarousel(7)" class="img__flex-half" src="../../../../assets/producciones/prod-8.jpg" alt="">
+        <img (click)="showCarousel(8)" class="img__flex-half" src="../../../../assets/producciones/prod-9.jpg" alt="">
 
-    <img (click)="showCarousel(9)" class="img__flex-1-quarter" src="../../../../producciones/prod-10.jpg" alt="">
-    <img (click)="showCarousel(10)" class="img__flex-3-quarter" src="../../../../producciones/prod-11.jpg" alt="">
-    
-    <img (click)="showCarousel(11)" class="img__flex-full" src="../../../../assets/producciones/prod-12.jpg" alt="">
+        <img (click)="showCarousel(9)" class="img__flex-1-quarter" src="../../../../producciones/prod-10.jpg" alt="">
+        <img (click)="showCarousel(10)" class="img__flex-3-quarter" src="../../../../producciones/prod-11.jpg" alt="">
+        
+        <img (click)="showCarousel(11)" class="img__flex-full" src="../../../../assets/producciones/prod-12.jpg" alt="">
 
-    <p>Sixties COLECCIONES - Vestuarista/Florencia Cornide. Taller de diseño y producción de vestuario. Reciclar y reinventar, arte y diseño en el cuerpo. </p>
-    
-    <img (click)="showCarousel(12)" class="img__flex-half" src="../../../../assets/producciones/prod-13.jpg" alt="">
-    <img (click)="showCarousel(13)" class="img__flex-half" src="../../../../assets/producciones/prod-14.jpg" alt="">
-    
-    <img (click)="showCarousel(14)" class="img__flex-full" src="../../../../assets/producciones/prod-15.jpg" alt="">
+        <p>Sixties COLECCIONES - Vestuarista/Florencia Cornide. Taller de diseño y producción de vestuario. Reciclar y reinventar, arte y diseño en el cuerpo. </p>
+        
+        <img (click)="showCarousel(12)" class="img__flex-half" src="../../../../assets/producciones/prod-13.jpg" alt="">
+        <img (click)="showCarousel(13)" class="img__flex-half" src="../../../../assets/producciones/prod-14.jpg" alt="">
+        
+        <img (click)="showCarousel(14)" class="img__flex-full" src="../../../../assets/producciones/prod-15.jpg" alt="">
+        
+        <div class="container__btn-up" >
+            <div (click)="scrollTop()" class="btn-up">
+                <span class="material-icons">straight</span>
+                <h4>Subir</h4>
+            </div>
+        </div>
 
+    </div>
 </div>
 
 <app-carousel [showCarousel]="carousel" [indexImg]="indexImg" [images]="images" (outputCarousel)="hideCarousel($event)"></app-carousel>

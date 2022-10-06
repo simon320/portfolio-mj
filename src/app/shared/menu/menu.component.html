@@ -1,21 +1,21 @@
 
 
-<div class="header__container">
-    <h1>MARIEL JUAREZ</h1>
-    <button type="button" class="menu__btn-open" (click)="showMenu()">
-      <span class="material-icons">menu</span>
-    </button>
-  </div>
+<div class="header__container" #scroll>
+  <h1>MARIEL JUAREZ</h1>
+  <button type="button" class="menu__btn-open" (click)="showMenu()">
+    <span class="material-icons">menu</span>
+  </button>
+</div>
   
-  <div #menuNav class="menu__container--nav">
-    <button class="menu__btn-close" type="button" (click)="hideMenu()">
-      <span class="material-icons">close</span>
-    </button>
-  
-    <a routerLink="./home" (click)="hideMenu()">Home</a>
-    <a routerLink="./home/producciones" (click)="hideMenu()">Producciones</a>
-    <a routerLink="./home/arquitectura-deco" (click)="hideMenu()">Arquitectura/Deco</a>
-    <a routerLink="./home/camp" (click)="hideMenu()">Campañas</a>
-    <a routerLink="./home/sesiones" (click)="hideMenu()">Sesiones</a>
-    <a routerLink="./home/personal" (click)="hideMenu()">Personal</a>
-  </div>
+<div #menuNav class="menu__container--nav">
+  <button class="menu__btn-close" type="button" (click)="hideMenu()">
+    <span class="material-icons">close</span>
+  </button>
+
+  <a routerLink="./home" (click)="hideMenu()">Home</a>
+  <a routerLink="./home/producciones" (click)="hideMenu()">Producciones</a>
+  <a routerLink="./home/arquitectura-deco" (click)="hideMenu()">Arquitectura/Deco</a>
+  <a routerLink="./home/camp" (click)="hideMenu()">Campañas</a>
+  <a routerLink="./home/sesiones" (click)="hideMenu()">Sesiones</a>
+  <a routerLink="./home/personal" (click)="hideMenu()">Personal</a>
+</div>

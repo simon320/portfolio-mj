@@ -1,6 +1,11 @@
 
 $item-mt: 10%;
 
+.container {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
 h2 {
     text-align: center;
     font-weight: 300;
@@ -13,7 +18,8 @@ h2 {
     justify-content: space-between;
     gap: 1%;
     width: 100vw;
-    height: 500px;
+    height: 100vh;
+
 
     img {
         margin-top: $item-mt;
@@ -37,6 +43,30 @@ h2 {
     }
 
 }
+
+.container__btn-up {
+    width: 100%;
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+    
+    .btn-up {
+        margin: auto;
+        width: fit-content;
+        justify-content: center;
+        display: flex;
+        cursor: pointer;
+
+        span {
+            color: rgb(146, 146, 146);
+        }
+        h4 {
+            display: inline;
+            color: rgb(146, 146, 146);
+        }
+    }
+}
+
+
 @media (min-width: 600px) {
     h2 {
         font-size: 2.2rem;

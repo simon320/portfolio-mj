@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-personal',
@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./personal.component.scss']
 })
 export class PersonalComponent {
+
+  @ViewChild('scroll') scroll!: ElementRef;
 
   carousel: boolean = false;
   indexImg: number = 0;
@@ -60,5 +62,9 @@ export class PersonalComponent {
 
   hideCarousel(e: boolean): void {
     this.carousel = e;
+  }
+
+  scrollTop() {
+    this.scroll.nativeElement.scrollTop = 0;
   }
 }

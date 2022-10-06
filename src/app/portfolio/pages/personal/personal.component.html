@@ -1,27 +1,36 @@
+<div class="container" #scroll>
 
-<h2>PERSONAL</h2>
+    <h2>PERSONAL</h2>
 
-<div class="container__flex">
-    
-    <img (click)="showCarousel(0)" class="img__flex-full" src="../../../../assets/personal/personal-1.jpg" alt="">
-    
-    <img (click)="showCarousel(1)" class="img__flex-half" src="../../../../assets/personal/personal-2.jpg" alt="">
-    <img (click)="showCarousel(2)" class="img__flex-half" src="../../../../assets/personal/personal-3.jpg" alt="">
-    
-    <img (click)="showCarousel(3)" class="img__flex-full" src="../../../../assets/personal/personal-4.jpg" alt="">
-    
-    <img (click)="showCarousel(4)" class="img__flex-full" src="../../../../assets/personal/personal-5.jpg" alt="">
+    <div class="container__flex">
+        
+        <img (click)="showCarousel(0)" class="img__flex-full" src="../../../../assets/personal/personal-1.jpg" alt="">
+        
+        <img (click)="showCarousel(1)" class="img__flex-half" src="../../../../assets/personal/personal-2.jpg" alt="">
+        <img (click)="showCarousel(2)" class="img__flex-half" src="../../../../assets/personal/personal-3.jpg" alt="">
+        
+        <img (click)="showCarousel(3)" class="img__flex-full" src="../../../../assets/personal/personal-4.jpg" alt="">
+        
+        <img (click)="showCarousel(4)" class="img__flex-full" src="../../../../assets/personal/personal-5.jpg" alt="">
 
-    <img (click)="showCarousel(5)" class="img__flex-full" src="../../../../assets/personal/personal-6.jpg" alt="">
-    <p>SOL NOCTURNO - Ensayo en progreso</p>
+        <img (click)="showCarousel(5)" class="img__flex-full" src="../../../../assets/personal/personal-6.jpg" alt="">
+        <p>SOL NOCTURNO - Ensayo en progreso</p>
 
-    <img (click)="showCarousel(6)" class="img__flex-half" src="../../../../assets/personal/personal-7.jpg" alt="">
-    <img (click)="showCarousel(7)" class="img__flex-half" src="../../../../assets/personal/personal-8.jpg" alt="">
-    
-    <img (click)="showCarousel(8)" class="img__flex-full" src="../../../../assets/personal/personal-9.jpg" alt="">
-    
-    <img (click)="showCarousel(9)" class="img__flex-full" src="../../../../assets/personal/personal-10.jpg" alt="">
-    
+        <img (click)="showCarousel(6)" class="img__flex-half" src="../../../../assets/personal/personal-7.jpg" alt="">
+        <img (click)="showCarousel(7)" class="img__flex-half" src="../../../../assets/personal/personal-8.jpg" alt="">
+        
+        <img (click)="showCarousel(8)" class="img__flex-full" src="../../../../assets/personal/personal-9.jpg" alt="">
+        
+        <img (click)="showCarousel(9)" class="img__flex-full" src="../../../../assets/personal/personal-10.jpg" alt="">
+        
+        <div class="container__btn-up" >
+            <div (click)="scrollTop()" class="btn-up">
+                <span class="material-icons">straight</span>
+                <h4>Subir</h4>
+            </div>
+        </div>
+
+    </div>
 </div>
 
 <app-carousel [showCarousel]="carousel" [indexImg]="indexImg" [images]="images" (outputCarousel)="hideCarousel($event)"></app-carousel>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-arquitectura-deco',
@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
   
 })
 export class ArquitecturaDecoComponent {
+
+  @ViewChild('scroll') scroll!: ElementRef;
 
   carousel: boolean = false;
   indexImg: number = 0;
@@ -81,6 +83,10 @@ export class ArquitecturaDecoComponent {
 
   hideCarousel(e: boolean){
     this.carousel = e;
+  }
+
+  scrollTop() {
+    this.scroll.nativeElement.scrollTop = 0;
   }
 
 }

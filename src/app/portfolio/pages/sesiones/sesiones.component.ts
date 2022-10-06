@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-sesiones',
@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./sesiones.component.scss']
 })
 export class SesionesComponent {
+
+  @ViewChild('scroll') scroll!: ElementRef;
 
   carousel: boolean = false;
   indexImg: number = 0;
@@ -92,5 +94,9 @@ export class SesionesComponent {
 
   hideCarousel(e: boolean){
     this.carousel = e;
+  }
+
+  scrollTop() {
+    this.scroll.nativeElement.scrollTop = 0;
   }
 }
