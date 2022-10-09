@@ -53,6 +53,14 @@
     to { opacity: 1; }
 }
 
+.container__arrows-btn {
+    user-select: none;
+}
+
+.controls {
+    user-select: none;
+}
+
 // Dots
 .container__carousel-dot {
     position: absolute;
