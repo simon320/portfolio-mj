@@ -8,11 +8,13 @@ import { RouterModule } from '@angular/router';
 import { MaterialModule } from './material/material.module';
 import { FormsModule } from '@angular/forms';
 import { MenuComponent } from './shared/menu/menu.component';
+import { ContactComponent } from './shared/contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MenuComponent
+    MenuComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
